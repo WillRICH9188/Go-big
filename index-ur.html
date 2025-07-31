@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+
+<html lang="ur">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مشن ٹاسک سینٹر</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>مشن چیلنج سینٹر</title>
+<style>
     body {
-      background-color: #0c0c0c;
+      font-family: 'Segoe UI', 'Noto Nastaliq Urdu', sans-serif;
+      background: #0d0d0d;
       color: #ffd700;
-      font-family: 'Noto Nastaliq Urdu', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: linear-gradient(145deg, #111111, #1a1a1a);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 28px rgba(255, 215, 0, 0.2);
+      max-width: 95vw;
+      width: 100%;
       text-align: center;
-      padding: 2rem;
+      border: 1px solid #ffd70044;
+      box-sizing: border-box;
     }
-    .button {
-      background-color: #ff3c41;
+    h1 {
+      color: #ffd700;
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 18px;
+      letter-spacing: 0.8px;
+    }
+    p {
+      margin: 12px 0;
+      font-size: 1em;
+      line-height: 1.6em;
+      letter-spacing: 0.4px;
+      font-weight: 500;
+    }
+    .button-red {
+      background-color: #e63946;
       color: white;
+      border: 2px solid gold;
+      border-radius: 14px;
+      padding: 12px;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 20px auto 10px;
+      width: 90%;
+      display: block;
+      text-decoration: none;
+      text-shadow: 0 0 2px gold;
+      box-shadow: 0 0 6px #e63946aa;
+      letter-spacing: 0.8px;
+    }
+    .button-yellow {
+      background-color: transparent;
+      color: #ffd700;
       border: 2px solid #ffd700;
-      padding: 1rem 2rem;
-      margin: 1rem;
-      font-size: 1.2rem;
-      border-radius: 10px;
-      cursor: pointer;
-      display: inline-block;
-    }
-    .button:hover {
-      background-color: #ff555a;
-    }
-    .box {
-      border: 2px solid #ffd700;
-      border-radius: 10px;
-      padding: 1rem;
-      margin: 1rem;
-    }
-    .icon {
-      font-size: 1.5rem;
+      border-radius: 12px;
+      padding: 10px;
+      margin: 10px auto;
+      width: 90%;
+      display: block;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: 600;
     }
     .badges {
       display: flex;
@@ -50,36 +85,70 @@
       display: block;
       filter: drop-shadow(0 0 1px #ffd70088);
     }
+    .note {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 22px;
+      line-height: 1.5em;
+    }
+    .lang-switcher {
+      margin-top: 24px;
+      font-size: 1em;
+    }
+    .lang-switcher label {
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1em;
+      margin-right: 8px;
+    }
+    .lang-switcher select {
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 1em;
+      background-color: #222;
+      color: #ffd700;
+      border: 1.5px solid #ffd700;
+    }
   </style>
 </head>
 <body>
-
-  <h1><span class="icon">🚩</span> مشن ٹاسک سینٹر</h1>
-
-  <p>🎯 <strong>روزانہ آسان سرگرمیاں مکمل کریں</strong> اور قیمتی انعامات حاصل کریں!</p>
-  <p>🎁 نئے صارفین خوش آمدید! ابھی آغاز کریں — خصوصی انعامات اور دلچسپ مواقع آپ کا منتظر ہیں۔</p>
-  <p>📱 مکمل موبائل سہولت — کہیں بھی، جب بھی، آسان رسائی کے ساتھ۔</p>
-  <p>🔐 ہمارا پلیٹ فارم مکمل طور پر سیکیورٹی تصدیق شدہ ہے۔</p>
-  <p>✅ 100% حقیقی انعامات کی ضمانت — مکمل شفافیت کے ساتھ۔</p>
-
-  <div class="button">ابھی شمولیت اختیار کریں</div>
-  <div class="box">کسٹمر سپورٹ</div>
-
-  <div class="badges">
-    <div class="badge">
-      <img src="https://github.com/WillRICH9188/Go-big/blob/main/SSL%E8%AE%A4%E8%AF%81-removebg-preview.png?raw=true" alt="SSL">
-    </div>
-    <div class="badge">
-      <img src="https://github.com/WillRICH9188/Go-big/blob/main/indian.png?raw=true" alt="India Flag">
-    </div>
-    <div class="badge">
-      <img src="https://github.com/WillRICH9188/Go-big/blob/main/TLS-removebg-preview.png?raw=true" alt="TLS">
-    </div>
-  </div>
-
-  <div style="margin-top: 2rem; font-size: 0.9rem; color: #aaa;">
-    ⚠️ صرف 18 سال سے زائد افراد کے لیے | صرف تفریحی مقاصد کے لیے | ہمیشہ ذمہ داری سے حصہ لیں۔
-  </div>
-
+<div class="container">
+<h1>🚩 مشن چیلنج سینٹر</h1>
+<p>🎩 <strong>روزانہ کے آسان ٹاسک مکمل کریں</strong> اور شاندار انعامات حاصل کریں!</p>
+<p>🏡 نئے صارفین خوش آمدید! ابھی شروعات کریں — نقدی اور سرپرائز انعامات آپ کا انتظار کر رہے ہیں!</p>
+<p>📱 مکمل موبائل سپورٹ — جب چاہیں، جہاں چاہیں، بغیر کسی رکاوٹ کے کھیلیں۔</p>
+<p>🔐 ہمارا پلیٹ فارم مکمل طور پر سیکیورٹی چیک شدہ ہے۔</p>
+<p>✅ 100% اصلی انعامات کی گارنٹی — کوئی فیک نہیں!</p>
+<a class="button-red" href="#">ابھی شامل ہوں</a>
+<a class="button-yellow" href="#">کسٹمر سپورٹ</a>
+<div class="badges">
+<div class="badge">
+<img alt="SSL" src="https://github.com/WillRICH9188/Go-big/blob/main/SSL%E8%AE%A4%E8%AF%81-removebg-preview.png?raw=true"/>
+</div>
+<div class="badge">
+<img alt="Flag" src="https://github.com/WillRICH9188/Go-big/blob/main/indian.png?raw=true"/>
+</div>
+<div class="badge">
+<img alt="TLS" src="https://github.com/WillRICH9188/Go-big/blob/main/TLS-removebg-preview.png?raw=true"/>
+</div>
+</div>
+<div class="lang-switcher">
+<label for="language">🌐 زبان تبدیل کریں:</label>
+<select id="language" onchange="switchLang(this.value)">
+<option value="index-en.html">English</option>
+<option value="index-hi.html">हिंदी</option>
+<option value="index-te.html">తెలుగు</option>
+<option value="index-ta.html">தமிழ்</option>
+<option value="index-kn.html">ಕನ್ನಡ</option>
+<option selected="" value="index-ur.html">اردو</option>
+</select>
+</div>
+<p class="note">⚠️ صرف 18 سال سے زائد افراد کے لیے | صرف تفریحی مقصد کے لیے | ذمہ داری سے کھیلیں۔</p>
+</div>
+<script>
+    function switchLang(url) {
+      window.location.href = url;
+    }
+  </script>
 </body>
 </html>
