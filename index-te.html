@@ -125,8 +125,8 @@
     <p>🔐 మా ప్లాట్‌ఫామ్ భద్రతా పరీక్షలో ఉత్తీర్ణమైంది.</p>
     <p>✅ 100% నిజమైన టాస్క్ రివార్డులు — మాకు మీరు నమ్మవచ్చు.</p>
 
-    <a href="#" class="button-red">ఇప్పుడే చేరండి</a>
-    <a href="#" class="button-yellow">కస్టమర్ సపోర్ట్</a>
+    <a href="#" class="button-red" id="btn-join">ఇప్పుడు చేరండి</a>
+    <a href="#" class="button-yellow" id="btn-support">వినియోగదారు మద్దతు</a>
 
     <div class="badges">
       <div class="badge">
@@ -159,6 +159,22 @@
     function switchLang(url) {
       window.location.href = url;
     }
+  document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("btn-join").addEventListener("click", function (e) {
+        e.preventDefault();
+        plausible("join_button_click");
+        setTimeout(function () {
+          window.location.href = "https://orangecashier.com/";
+        }, 300);
+      });
+      document.getElementById("btn-support").addEventListener("click", function (e) {
+        e.preventDefault();
+        plausible("support_button_click");
+        setTimeout(function () {
+          window.location.href = "https://orangecashier.com/";
+        }, 300);
+      });
+    });
   </script>
 </body>
 </html>
