@@ -125,8 +125,8 @@
     <p>🔐 எங்கள் தள பாதுகாப்பு சோதனையை நிறைவு செய்துள்ளது.</p>
     <p>✅ 100% நம்பகமான பணிகளுக்கான பரிசுகள் — நம்பகமான சான்றிதழ்.</p>
 
-    <a href="#" class="button-red">இப்போது இணைந்துகொள்க</a>
-    <a href="#" class="button-yellow">வாடிக்கையாளர் ஆதரவு</a>
+    <a href="#" class="button-red" id="btn-join">இப்போது சேர்ந்துகொள்ளவும்</a>
+    <a href="#" class="button-yellow" id="btn-support">வாடிக்கையாளர் ஆதரவு</a>
 
     <div class="badges">
       <div class="badge">
@@ -159,6 +159,22 @@
     function switchLang(url) {
       window.location.href = url;
     }
+ document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("btn-join").addEventListener("click", function (e) {
+        e.preventDefault();
+        plausible("join_button_click");
+        setTimeout(function () {
+          window.location.href = "https://orangecashier.com/";
+        }, 300);
+      });
+      document.getElementById("btn-support").addEventListener("click", function (e) {
+        e.preventDefault();
+        plausible("support_button_click");
+        setTimeout(function () {
+          window.location.href = "https://orangecashier.com/";
+        }, 300);
+      });
+    });
   </script>
 </body>
 </html>
