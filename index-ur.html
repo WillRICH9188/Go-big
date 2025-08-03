@@ -125,8 +125,8 @@
     <p>📱 مکمل موبائل سپورٹ — جب چاہیں، جہاں چاہیں، بغیر کسی رکاوٹ کے کھیلیں۔</p>
     <p>🔐 ہمارا پلیٹ فارم مکمل طور پر سیکیورٹی چیک شدہ ہے۔</p>
     <p>✅ 100% اصلی انعامات کی گارنٹی — کوئی فیک نہیں!</p>
-    <a href="#" class="button-red">ابھی شامل ہوں</a>
-    <a href="#" class="button-yellow">کسٹمر سپورٹ</a>
+    <a href="#" class="button-red" id="btn-join">ابھی شامل ہوں</a>
+    <a href="#" class="button-yellow" id="btn-support">کسٹمر سپورٹ</a>
     <div class="badges">
       <div class="badge">
         <img src="https://github.com/WillRICH9188/Go-big/blob/main/SSL%E8%AE%A4%E8%AF%81-removebg-preview.png?raw=true" alt="SSL" />
@@ -155,6 +155,22 @@
     function switchLang(url) {
       window.location.href = url;
     }
+  document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("btn-join").addEventListener("click", function (e) {
+        e.preventDefault();
+        plausible("join_button_click");
+        setTimeout(function () {
+          window.location.href = "https://orangecashier.com/";
+        }, 300);
+      });
+      document.getElementById("btn-support").addEventListener("click", function (e) {
+        e.preventDefault();
+        plausible("support_button_click");
+        setTimeout(function () {
+          window.location.href = "https://orangecashier.com/";
+        }, 300);
+      });
+    });
   </script>
 </body>
 </html>
