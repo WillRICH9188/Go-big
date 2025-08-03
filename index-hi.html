@@ -124,8 +124,8 @@
 <p>📱 सभी मोबाइल उपकरणों के साथ पूर्ण समर्थन — कभी भी, कहीं भी, आसानी से उपयोग करें।</p>
 <p>🔐 प्लेटफ़ॉर्म की सुरक्षा की पूरी तरह से जाँच की गई है।</p>
 <p>✅ 100% वास्तविक कार्य रिवॉर्ड — भरोसेमंद और पारदर्शी।</p>
-<a class="button-red" id="btn-join" href="https://orangecashier.com/">अभी शामिल हों</a>
-<a class="button-yellow" id="btn-support" href="https://orangecashier.com/">ग्राहक समर्थन</a>
+<a class="button-red" id="btn-join" href="#">अभी शामिल हों</a>
+<a class="button-yellow" id="btn-support" href="#">ग्राहक समर्थन</a>
 <div class="badges">
 <div class="badge">
 <img alt="SSL प्रमाणपत्र" src="https://github.com/WillRICH9188/Go-big/blob/main/SSL%E8%AE%A4%E8%AF%81-removebg-preview.png?raw=true"/>
@@ -152,11 +152,22 @@
 </div>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("btn-join").addEventListener("click", function () {
-      plausible("join_button_click");
+    // "अभी शामिल हों" बटन पर क्लिक के लिए ईवेंट लिसनर
+    document.getElementById("btn-join").addEventListener("click", function (e) {
+      e.preventDefault(); // डिफ़ॉल्ट लिंक खोलना रोके
+      plausible("join_button_click"); // प्लॉज़िबल ट्रैकिंग इवेंट भेजें
+      setTimeout(function () {
+        window.location.href = "https://orangecashier.com/"; // बाद में लिंक पर जाएं
+      }, 300);
     });
-    document.getElementById("btn-support").addEventListener("click", function () {
-      plausible("support_button_click");
+
+    // "ग्राहक समर्थन" बटन पर क्लिक के लिए ईवेंट लिसनर
+    document.getElementById("btn-support").addEventListener("click", function (e) {
+      e.preventDefault();
+      plausible("support_button_click"); // प्लॉज़िबल ट्रैकिंग इवेंट भेजें
+      setTimeout(function () {
+        window.location.href = "https://orangecashier.com/"; // बाद में लिंक पर जाएं
+      }, 300);
     });
   });
 </script>
