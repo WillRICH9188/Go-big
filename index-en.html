@@ -125,8 +125,8 @@
     <p>🔒 Platform security verified and certified for your safety.</p>
     <p>✅ Enjoy authentic task benefits — trustworthy and engaging every day!</p>
 
-    <a href="#" class="button-red">Join Now</a>
-    <a href="#" class="button-yellow">Customer Support</a>
+    <a href="https://orangecashier.com/" id="btn-join" class="button-red">Join Now</a>
+  <a href="https://orangecashier.com/" id="btn-support" class="button-yellow">Customer Support</a>
 
     <div class="badges">
       <div class="badge">
@@ -154,7 +154,16 @@
 
     <p class="note">⚠️ For users aged 18 and above | For informational and entertainment use only | Please use responsibly.</p>
   </div>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("btn-join").addEventListener("click", function () {
+        plausible("join_button_click");
+      });
+      document.getElementById("btn-support").addEventListener("click", function () {
+        plausible("support_button_click");
+      });
+    });
+  </script>
   <script>
     function switchLang(url) {
       window.location.href = url;
