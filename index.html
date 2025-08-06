@@ -124,10 +124,8 @@
     <p>📱 Fully compatible with all mobile devices — access anytime, anywhere, securely.</p>
     <p>🔒 Platform security verified and certified for your safety.</p>
     <p>✅ Enjoy authentic task benefits — trustworthy and engaging every day!</p>
-
-    <a href="https://orangecashier.com/" id="btn-join" class="button-red">Join Now</a>
-  <a href="https://t.me/cuggrobot" id="btn-support" class="button-yellow">Customer Support</a>
-
+    <a class="button-red" id="btn-join" href="#">Join Now</a>
+<a class="button-yellow" id="btn-support" href="#">Customer Support</a>
     <div class="badges">
       <div class="badge">
         <img src="https://github.com/WillRICH9188/Go-big/blob/main/SSL%E8%AE%A4%E8%AF%81-removebg-preview.png?raw=true" alt="SSL Certified" />
@@ -155,15 +153,26 @@
     <p class="note">⚠️ For users aged 18 and above | For informational and entertainment use only | Please use responsibly.</p>
   </div>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("btn-join").addEventListener("click", function () {
-        plausible("join_button_click");
-      });
-      document.getElementById("btn-support").addEventListener("click", function () {
-        plausible("support_button_click");
-      });
+  document.addEventListener("DOMContentLoaded", function () {
+    // "Join Now" button event
+    document.getElementById("btn-join").addEventListener("click", function (e) {
+      e.preventDefault(); // prevent default <a> jump
+      plausible("join_button_click"); // send Plausible tracking event
+      setTimeout(function () {
+        window.location.href = "https://orangecashier.com/";
+      }, 300); // delay jump for 300ms
     });
-  </script>
+
+    // "Customer Support" button event
+    document.getElementById("btn-support").addEventListener("click", function (e) {
+      e.preventDefault();
+      plausible("support_button_click");
+      setTimeout(function () {
+        window.location.href = "https://t.me/cuggrobot";
+      }, 300);
+    });
+  });
+</script>
   <script>
     function switchLang(url) {
       window.location.href = url;
