@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>মিশন টাস্ক সেন্টার</title>
+  <script defer data-domain="my9.to" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
+<script>
+  window.plausible = window.plausible || function () {
+    (window.plausible.q = window.plausible.q || []).push(arguments);
+  };
+</script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #ffd700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: linear-gradient(145deg, #111111, #1a1a1a);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 28px rgba(255, 215, 0, 0.2);
+      max-width: 95vw;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #ffd70044;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: #ffd700;
+      font-size: 2em;
+      font-weight: 800;
+      margin-bottom: 18px;
+      letter-spacing: 0.8px;
+    }
+    p {
+      margin: 12px 0;
+      font-size: 1em;
+      line-height: 1.6em;
+      letter-spacing: 0.4px;
+      font-weight: 500;
+    }
+    .button-red {
+      background-color: #e63946;
+      color: white;
+      border: 2px solid gold;
+      border-radius: 14px;
+      padding: 12px;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 20px auto 10px;
+      width: 90%;
+      display: block;
+      text-decoration: none;
+      text-shadow: 0 0 2px gold;
+      box-shadow: 0 0 6px #e63946aa;
+      letter-spacing: 0.8px;
+    }
+    .button-yellow {
+      background-color: transparent;
+      color: #ffd700;
+      border: 2px solid #ffd700;
+      border-radius: 12px;
+      padding: 10px;
+      margin: 10px auto;
+      width: 90%;
+      display: block;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: 600;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .badge img {
+      height: 48px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 0 1px #ffd70088);
+    }
+    .note {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 22px;
+      line-height: 1.5em;
+    }
+    .lang-switcher {
+      margin-top: 24px;
+      font-size: 1em;
+    }
+    .lang-switcher label {
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1em;
+      margin-right: 8px;
+    }
+    .lang-switcher select {
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 1em;
+      background-color: #222;
+      color: #ffd700;
+      border: 1.5px solid #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚩 মিশন টাস্ক সেন্টার</h1>
+    <p>🎯 প্রতিদিনের কাজ সম্পূর্ণ করুন এবং বিশেষ সুবিধা আনলক করুন!</p>
+    <p>🎁 নতুন ব্যবহারকারীদের জন্য বিশেষ স্বাগতম — আজই শুরু করুন এবং সাপ্তাহিক চমকপ্রদ মিশন আবিষ্কার করুন!</p>
+    <p>📱 সব মোবাইল ডিভাইসের সাথে সম্পূর্ণ উপযোগী — যেকোনো সময়, যেকোনো জায়গায় নিরাপদে প্রবেশ করুন।</p>
+    <p>🔒 আপনার সুরক্ষার জন্য প্ল্যাটফর্ম সুরক্ষা যাচাই ও সার্টিফাই করা হয়েছে।</p>
+    <p>✅ আসল টাস্ক সুবিধা উপভোগ করুন — প্রতিদিন বিশ্বস্ত ও আকর্ষণীয়!</p>
+    <a class="button-red" id="btn-join" href="#">এখন যোগ দিন</a>
+<a class="button-yellow" id="btn-support" href="#">গ্রাহক সহায়তা</a>
+    <div class="badges">
+      <div class="badge">
+        <img src="https://github.com/WillRICH9188/Go-big/blob/main/SSL%E8%AE%A4%E8%AF%81-removebg-preview.png?raw=true" alt="SSL Certified" />
+      </div>
+      <div class="badge">
+        <img src="https://github.com/WillRICH9188/Go-big/blob/main/indian.png?raw=true" alt="India Flag" />
+      </div>
+      <div class="badge">
+        <img src="https://github.com/WillRICH9188/Go-big/blob/main/TLS-removebg-preview.png?raw=true" alt="TLS Certified" />
+      </div>
+    </div>
+
+    <div class="lang-switcher">
+      <label for="language">🌐 ভাষা পরিবর্তন:</label>
+      <select id="language" onchange="switchLang(this.value)">
+        <option value="index-en.html">English</option>
+        <option value="index-hi.html">हिंदी</option>
+        <option value="index-te.html">తెలుగు</option>
+        <option value="index-ta.html">தமிழ்</option>
+        <option value="index-kn.html">ಕನ್ನಡ</option>
+        <option value="index-or.html">ଓଡ଼ିଆ</option>
+        <option value="index-bn.html" selected>বাংলা</option>
+        <option value="index-ml.html">മലയാളം</option>
+        <option value="index-ur.html">اردو</option>
+      </select>
+    </div>
+
+    <p class="note">⚠️ ১৮ বছর বা তদূর্ধ্ব ব্যবহারকারীদের জন্য | শুধুমাত্র তথ্য ও বিনোদনের উদ্দেশ্যে | দায়িত্বশীলভাবে ব্যবহার করুন।</p>
+  </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // "Join Now" button event
+    document.getElementById("btn-join").addEventListener("click", function (e) {
+      e.preventDefault(); // prevent default <a> jump
+      plausible("join_button_click"); // send Plausible tracking event
+      setTimeout(function () {
+        window.location.href = "https://teenpatti.game/share/index.html?i=12633727&c=TeenpattigameGG01&e=pro&s=c";
+      }, 300); // delay jump for 300ms
+    });
+
+    // "Customer Support" button event
+    document.getElementById("btn-support").addEventListener("click", function (e) {
+      e.preventDefault();
+      plausible("support_button_click");
+      setTimeout(function () {
+        window.location.href = "https://t.me/cuggrobot";
+      }, 300);
+    });
+  });
+</script>
+  <script>
+    function switchLang(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
